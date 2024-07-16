@@ -1,0 +1,34 @@
+/* .grid-inner {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 45px;
+} */
+
+/* 4번 코드로 99%를 썼다. 5번 코드로 기둥 사이마다 45px를 더해서 grid-inner의 폭은 99% + (45+45)px이다. 그 결과 horizontal scrall bar가 생긴다.*/
+
+/* .grid-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 45px;
+} */
+
+/* 스크롤바가 생기는 것은 막았다. 작은 화면에서 봤을 때도 columns은 세 개이므로 찌그러진다. 
+  ((참고))
+    - grid-template-columns: 1fr 1fr 1fr;은
+      grid-template-columns: repeat(3:반복횟수,1fr:크기);
+*/
+
+.grid-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 45px;
+}
+
+/* 만약 repeat(auto-fit, 300px)로 설정했다면, 창이 줄어들어도 300px을 유지한다. 창이 많이 줄어들어서 300px를 유지하기 어려울 때는 자동으로 300px을 유지하게끔 기둥의 개수를 조절한다.  
+  하지만 repeat(auto-fit, 300px)을 하면, 300px로 
+고정되었기 때문에 여백이 있어도 300px을 유지한다. repeat(auto-fit, minmax(300px, 1fr))을 하면, 원래는 여백이 남지만 그 여백을 최대 1fr 범위 안에서 채운다. 
+  ((참고))
+    - gap: [column-gap] [row-gap]
+    - column-gap: 기둥 양옆
+    - row-gap: 라인 위아래
+*/

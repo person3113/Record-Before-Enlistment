@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: whitesmoke;
+}
+main {
+  text-align: center;
+}
+p#show {
+  font-size: 2rem;
+}
+.btn-container .btn {
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: capitalize;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/ef09577826.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!--player-->
+    <div class="area">
+      <section class="player">
+        <iframe
+          src="https://www.youtube.com/embed/67stn7Pu7s4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </div>
+
+    <!-- video info & up next -->
+    <div class="info-and-upNext">
+      <!--video info-->
+      <section class="info">
+        <!-- metaData -->
+        <div class="metaData">
+          <ul class="hashTags">
+            <li>tag1</li>
+            <li>tag2</li>
+            <li>tag3</li>
+          </ul>
+          <div class="titleAndBtn">
+            <span class="title clamp"
+              >title, title, title, title, title, title, title, title, title,
+              title, title, title, title, title, title, title, title, title,
+              title, title, title, title, title, title, title, title, title,
+              title, title, title, title, title, title, title, title, title,
+              title, title, title, title, title, title, title, title, title,
+              title, title, title,</span
+            >
+            <button class="moreBtn"><i class="fas fa-angle-down"></i></button>
+          </div>
+          <span class="views">1 views 1 year ago</span>
+        </div>
+
+        <!-- actionsBtn -->
+        <ul class="actions">
+          <li>
+            <button><i class="far fa-thumbs-up"></i><span>1</span></button>
+          </li>
+          <li>
+            <button><i class="far fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-flag"></i><span>Report</span></button>
+          </li>
+        </ul>
+
+        <!-- channel descriptions -->
+        <div class="channel">
+          <div class="metaData">
+            <img
+              src="https://freepngimg.com/thumb/youtube/63841-profile-twitch-youtube-avatar-discord-free-download-image.png"
+              alt="image"
+            />
+            <div class="info">
+              <span class="name">나님</span>
+              <span class="subscribers">1 subscribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <!--up next-->
+      <section class="up-next">
+        <span class="title">up next</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.ytimg.com/vi/TZ7aoZG11Cc/maxresdefault.jpg"
+                alt="thumbnail1"
+              />
+            </div>
+            <div class="info">
+              <span class="title">쿠쿠</span>
+              <span class="name">나님</span>
+              <span class="views">1 views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.ytimg.com/vi/TZ7aoZG11Cc/maxresdefault.jpg"
+                alt="thumbnail2"
+              />
+            </div>
+            <div class="info">
+              <span class="title">쿠쿠쿠</span>
+              <span class="name">나님</span>
+              <span class="views">1 views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.ytimg.com/vi/TZ7aoZG11Cc/maxresdefault.jpg"
+                alt="thumbnail3"
+              />
+            </div>
+            <div class="info">
+              <span class="title">쿠쿠쿠쿠</span>
+              <span class="name">나님</span>
+              <span class="views">1 views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
